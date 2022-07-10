@@ -29,7 +29,14 @@ https://signate.jp/competitions/102
 
 # ②モデル作成：GradientBoostingClassifier
 - モデル：GradientBoostingClassifier
-- ライブラリ：Sklearn
+- ライブラリ：Sklearn,XGBoost
 - データ分割：cross-validation
 - 目的関数：accuracy
 - ハイパーパラメータ： {'n_estimators':[100,200,300,400,500],'learning_rate':[0.01,0.03,0.06,0.09,0.12],'max_depth':[2,4,6,8]}
+
+# ③モデル作成：ツリー系
+- モデル：RandomForestClassifier,ExtraTreesClassifier,DecisionTreeClassifier
+- ライブラリ：Sklearn
+- データ分割：cross-validation
+- 目的関数：accuracy
+- ハイパーパラメータ： {'max_depth':[2,4,6,8,10],'max_features':[1,2,3,4,5],'n_estimators':[100,200,300,400,500]}

@@ -33,6 +33,10 @@ https://signate.jp/competitions/102
 - データ分割：cross-validation
 - 目的関数：accuracy
 - ハイパーパラメータ： {'n_estimators':[100,200,300,400,500],'learning_rate':[0.01,0.03,0.06,0.09,0.12],'max_depth':[2,4,6,8]}
+- 特徴量エンジニアリング；'FamilySize'家族の人数合計、'IsAlon'独身フラグ
+　　ACC　　　⇨パターン①Vanila：0.8645321 / パターン②'FamilySize'＋'IsAlon'：0.8681198 / パターン③'FamilySize'： / パターン④'IsAlon'：
+　　Log_Loss⇨パターン①Vanila：- / パターン②'FamilySize'＋'IsAlon'：0.8681198 / パターン③'FamilySize'： / パターン④'IsAlon'：
+
 
 # ③モデル作成：ツリー系
 - モデル：RandomForestClassifier,ExtraTreesClassifier,DecisionTreeClassifier
